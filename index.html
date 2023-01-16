@@ -1,0 +1,102 @@
+<!-- Question 5 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox status</title>
+</head>
+<body>
+    <h1>Checkbox status</h1>
+    <input type="checkbox" name="" id="checkbox">
+    <p id="text"></p>
+    
+</body>
+<script>
+   var inp = document.getElementById('checkbox');
+   inp.addEventListener("change",()=>{
+    if(inp.checked){
+    text.innerHTML =" check box is now checked"
+    }
+   else{
+    text.innerHTML= " ";
+   }
+})
+   
+</script>
+</html> -->
+
+
+
+<!-- question 6 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add row</title>
+</head>
+
+<body>
+    <table class="tableId" >
+        <tr>
+            <td>This is row 1</td>
+        </tr>
+        <tr>
+            <td>This is row 2</td>
+        </tr>
+        <tr>
+            <td>This is row 3</td>
+        </tr>
+        <tr>
+            <td>This is row 4</td>
+        </tr>
+    </table>
+    <button onclick="addRow()">Click for add a row </button>
+
+</body>
+<script>
+    function addRow() {
+        var tableData = document.getElementById('tableId').insertRow(0);
+        var tableRow = tableData.insertCell(0);
+        tableRow.innerHTML = " This row added"
+
+    }
+
+
+</script>
+
+</html>
+
+<!-- question 7 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas reactangle</title>
+</head>
+<body>
+    <canvas class="canvasId" width = "300" height = "150"></canvas>
+</body>
+<script>
+    var can = document.getElementById('canvasId')
+    var drawshape = can.getContext("2d")
+    drawshape.beginPath()
+    draw.rect(20,20,150,100)
+    draw.stroke()
+</script>
+</html> -->
+
+
+<!-- question 9 -->
+
+

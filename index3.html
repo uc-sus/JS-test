@@ -1,0 +1,47 @@
+
+
+
+<!-- question 6 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add row</title>
+</head>
+
+<body>
+    <table class="tableId" >
+        <tr>
+            <td>This is row 1</td>
+        </tr>
+        <tr>
+            <td>This is row 2</td>
+        </tr>
+        <tr>
+            <td>This is row 3</td>
+        </tr>
+        <tr>
+            <td>This is row 4</td>
+        </tr>
+    </table>
+    <button onclick="insert_row()">Click for add a row </button>
+
+</body>
+<script>
+    function insert_row() {
+        var tableData = document.getElementById('tableId');
+        var row = tableData.insertRow(0);
+        var tableRow = tableData.insertCell(0);
+        tableRow.innerHTML = " This row added";
+
+    }
+
+
+</script>
+
+</html>
+
